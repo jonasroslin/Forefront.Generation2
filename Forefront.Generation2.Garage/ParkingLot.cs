@@ -1,6 +1,6 @@
 using System;
 
-namespace Forefront.Generation.Garage
+namespace Forefront.Generation2.Garage
 {
     public class ParkingLot
     {

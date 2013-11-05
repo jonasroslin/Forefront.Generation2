@@ -1,7 +1,7 @@
 using System;
 using System.Collections.Generic;
 
-namespace Forefront.Generation.Garage
+namespace Forefront.Generation2.Garage
 {
     public class Garage
     {
