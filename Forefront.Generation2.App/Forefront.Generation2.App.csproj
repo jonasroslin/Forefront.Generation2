@@ -4,11 +4,11 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{2F31A2BC-90D7-44B5-AD58-91FCBC34A245}</ProjectGuid>
+    <ProjectGuid>{5751AEA2-CD66-423E-9478-CC879FFE2BA6}</ProjectGuid>
     <OutputType>Exe</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>Forefront.Generation2.Lychrel</RootNamespace>
-    <AssemblyName>Forefront.Generation2.Lychrel</AssemblyName>
+    <RootNamespace>Forefront.Generation2.App</RootNamespace>
+    <AssemblyName>Forefront.Generation2.App</AssemblyName>
     <TargetFrameworkVersion>v4.5.1</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
   </PropertyGroup>
@@ -34,7 +34,6 @@
   <ItemGroup>
     <Reference Include="System" />
     <Reference Include="System.Core" />
-    <Reference Include="System.Numerics" />
     <Reference Include="System.Xml.Linq" />
     <Reference Include="System.Data.DataSetExtensions" />
     <Reference Include="Microsoft.CSharp" />
@@ -50,7 +49,7 @@
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\Forefront.Generation2.Lychrel.Tests\Forefront.Generation2.Lychrel.Tests.csproj">
-      <Project>{6eda8b7a-c2c9-4039-b4c9-50e171e451f1}</Project>
+      <Project>{6EDA8B7A-C2C9-4039-B4C9-50E171E451F1}</Project>
       <Name>Forefront.Generation2.Lychrel.Tests</Name>
     </ProjectReference>
   </ItemGroup>
