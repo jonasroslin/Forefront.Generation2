@@ -5,17 +5,20 @@ namespace Forefront.Generation2.PersonalNumber.Tests
 {
     public static class TrimPersonalNumberStringToNumbers
     {
-        public static IEnumerable<int> Trim(string personalNumber)
+        public static List<int> Trim(string personalNumber)
         {
-            personalNumber = personalNumber.Replace("-", string.Empty);
+            personalNumber = personalNumber.Replace("-", "");
 
-            var ints = new List<int>();
-            for (var i = 0; i < personalNumber.Length-1; i++)
+            List<int> personalNumberAsArray = new List<int>();
+
+            for (int i = 0; i < personalNumber.Length-1; i++)
             {
-                ints.Add(Convert.ToInt32(personalNumber[i].ToString()));
+                string c = personalNumber[i].ToString();
+                personalNumberAsArray.Add(Convert.ToInt32(c));
             }
 
-            return ints;
+
+            return personalNumberAsArray;
         }
     }
 }

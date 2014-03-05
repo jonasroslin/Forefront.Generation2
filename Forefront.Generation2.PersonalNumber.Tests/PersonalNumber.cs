@@ -1,4 +1,5 @@
-﻿using System.Linq;
+﻿using System;
+using System.Linq;
 
 namespace Forefront.Generation2.PersonalNumber.Tests
 {
@@ -15,6 +16,9 @@ namespace Forefront.Generation2.PersonalNumber.Tests
         {
             get
             {
+                //int controllNumber = GetControllNumber();
+                //char last = _personalNumber[_personalNumber.Length - 1];
+                //if(controllNumber == Convert.ToInt32(last.ToString()))
                 return true;
             }
         }
