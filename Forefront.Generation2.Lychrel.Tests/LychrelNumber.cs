@@ -22,17 +22,4 @@ namespace Forefront.Generation2.Lychrel.Tests
             Assert.IsFalse(isLychrel);
         }
     }
-
-    public interface ICheckForLychrelNumber
-    {
-        bool IsLychrel(int number);
-    }
-
-    public class LychrelNumber : ICheckForLychrelNumber
-    {
-        public bool IsLychrel(int number)
-        {
-            throw new NotImplementedException();
-        }
-    }
 }

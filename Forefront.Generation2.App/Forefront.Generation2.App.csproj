@@ -34,11 +34,6 @@
   <ItemGroup>
     <Reference Include="System" />
     <Reference Include="System.Core" />
-    <Reference Include="System.Xml.Linq" />
-    <Reference Include="System.Data.DataSetExtensions" />
-    <Reference Include="Microsoft.CSharp" />
-    <Reference Include="System.Data" />
-    <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Program.cs" />
@@ -48,9 +43,9 @@
     <None Include="App.config" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\Forefront.Generation2.Lychrel.Tests\Forefront.Generation2.Lychrel.Tests.csproj">
-      <Project>{6EDA8B7A-C2C9-4039-B4C9-50E171E451F1}</Project>
-      <Name>Forefront.Generation2.Lychrel.Tests</Name>
+    <ProjectReference Include="..\Forefront.Generation2.Lychrel\Forefront.Generation2.Lychrel.csproj">
+      <Project>{3F1D3921-5379-4CC1-8047-551A7A6CFE23}</Project>
+      <Name>Forefront.Generation2.Lychrel</Name>
     </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

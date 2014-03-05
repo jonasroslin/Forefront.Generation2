@@ -15,6 +15,8 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "PersonalNumber", "PersonalN
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Forefront.Generation2.App", "Forefront.Generation2.App\Forefront.Generation2.App.csproj", "{5751AEA2-CD66-423E-9478-CC879FFE2BA6}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Forefront.Generation2.Lychrel", "Forefront.Generation2.Lychrel\Forefront.Generation2.Lychrel.csproj", "{3F1D3921-5379-4CC1-8047-551A7A6CFE23}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -37,6 +39,10 @@ Global
 		{5751AEA2-CD66-423E-9478-CC879FFE2BA6}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{5751AEA2-CD66-423E-9478-CC879FFE2BA6}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{5751AEA2-CD66-423E-9478-CC879FFE2BA6}.Release|Any CPU.Build.0 = Release|Any CPU
+		{3F1D3921-5379-4CC1-8047-551A7A6CFE23}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3F1D3921-5379-4CC1-8047-551A7A6CFE23}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3F1D3921-5379-4CC1-8047-551A7A6CFE23}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3F1D3921-5379-4CC1-8047-551A7A6CFE23}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -44,6 +50,7 @@ Global
 	GlobalSection(NestedProjects) = preSolution
 		{6EDA8B7A-C2C9-4039-B4C9-50E171E451F1} = {C8220FCA-B4D5-46A1-9E6A-E9FBFEEC4B6F}
 		{5751AEA2-CD66-423E-9478-CC879FFE2BA6} = {C8220FCA-B4D5-46A1-9E6A-E9FBFEEC4B6F}
+		{3F1D3921-5379-4CC1-8047-551A7A6CFE23} = {C8220FCA-B4D5-46A1-9E6A-E9FBFEEC4B6F}
 		{26656309-FDC1-45C7-A964-671E8C7626F2} = {DC914F5A-77A9-4122-978B-2933E6621E60}
 		{ECCBB4E8-3C31-4C23-953F-22F421CE0F90} = {0F5D1A0A-EF40-4F50-871E-562EAA724DCE}
 	EndGlobalSection

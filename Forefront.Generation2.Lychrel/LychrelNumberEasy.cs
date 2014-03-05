@@ -1,7 +1,7 @@
 ﻿using System;
 using System.Numerics;
 
-namespace Forefront.Generation2.Lychrel.Tests
+namespace Forefront.Generation2.Lychrel
 {
     public class LychrelNumberEasy : ICheckForLychrelNumber
     {
@@ -21,7 +21,7 @@ namespace Forefront.Generation2.Lychrel.Tests
             return number == ReverseNumber(number);
         }
 
-        private BigInteger ReverseNumber(BigInteger number)
+        private static BigInteger ReverseNumber(BigInteger number)
         {
             var numberAsArray = number.ToString().ToCharArray();
             Array.Reverse(numberAsArray);
