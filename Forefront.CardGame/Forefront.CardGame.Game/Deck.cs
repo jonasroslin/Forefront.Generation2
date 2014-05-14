@@ -24,7 +24,7 @@ namespace Forefront.CardGame.Game
         public void Reset()
         {
             _cards.Clear();
-
+           
             foreach (var suit in _allSuits)
             {
                 var counter = 2;

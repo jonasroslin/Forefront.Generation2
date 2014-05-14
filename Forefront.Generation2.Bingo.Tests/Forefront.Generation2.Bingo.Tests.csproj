@@ -4,11 +4,11 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{ECCBB4E8-3C31-4C23-953F-22F421CE0F90}</ProjectGuid>
+    <ProjectGuid>{2CAB74A8-91A4-4A1F-A5DA-4FBF7F6D0EFD}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>Forefront.Generation2.PersonalNumber.Tests</RootNamespace>
-    <AssemblyName>Forefront.Generation2.PersonalNumber.Tests</AssemblyName>
+    <RootNamespace>Forefront.Generation2.Bingo.Tests</RootNamespace>
+    <AssemblyName>Forefront.Generation2.Bingo.Tests</AssemblyName>
     <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <SolutionDir Condition="$(SolutionDir) == '' Or $(SolutionDir) == '*Undefined*'">..\</SolutionDir>
@@ -33,7 +33,10 @@
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="FluentAssertions">
-      <HintPath>..\packages\FluentAssertions.2.1.0.0\lib\net45\FluentAssertions.dll</HintPath>
+      <HintPath>..\packages\FluentAssertions.3.0.107\lib\net45\FluentAssertions.dll</HintPath>
+    </Reference>
+    <Reference Include="FluentAssertions.Core">
+      <HintPath>..\packages\FluentAssertions.3.0.107\lib\net45\FluentAssertions.Core.dll</HintPath>
     </Reference>
     <Reference Include="nunit.framework">
       <HintPath>..\packages\NUnit.2.6.3\lib\nunit.framework.dll</HintPath>
@@ -47,14 +50,19 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="PersonalNumberTests.cs" />
-    <Compile Include="GetControllNumberOfAPersonalNumber.cs" />
-    <Compile Include="PersonalNumber.cs" />
+    <Compile Include="BingoDealerTests.cs" />
+    <Compile Include="BingoSpotTests.cs" />
+    <Compile Include="BingoTicketTests.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="TrimPersonalNumberStringToNumbers.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="packages.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Forefont.Generation2.Bingo\Forefont.Generation2.Bingo.csproj">
+      <Project>{238dd8aa-f1b8-4d18-a950-3f324a685316}</Project>
+      <Name>Forefont.Generation2.Bingo</Name>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <Import Project="$(SolutionDir)\.nuget\NuGet.targets" Condition="Exists('$(SolutionDir)\.nuget\NuGet.targets')" />
