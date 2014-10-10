@@ -65,7 +65,7 @@ namespace Forefront.CardGame.App
 
         private static void ShowOneHand(Deck deck, ICardPrinter cardPrinter)
         {
-            Hand hand = deck.TakeOnHand();
+            Hand hand = deck.TakeOneHand();
             cardPrinter.Print(hand.ShowCard());
         }
 
@@ -78,7 +78,7 @@ namespace Forefront.CardGame.App
                 counter++;
                 deck.Reset();
                 deck.Shuffle();
-                currentHand = deck.TakeOnHand();
+                currentHand = deck.TakeOneHand();
                 if (counter%1000 == 0)
                     Console.WriteLine(counter);
             } while (CheckIfIsTargetHand(currentHand));

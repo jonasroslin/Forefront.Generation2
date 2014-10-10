@@ -1,7 +1,4 @@
-﻿using System;
-using System.Linq;
-using System.Numerics;
-using FluentAssertions;
+﻿using FluentAssertions;
 using Forefront.CardGame.Game;
 using NUnit.Framework;
 
@@ -21,7 +18,7 @@ namespace Forefront.CardGame.Tests
         public void Should_be_able_to_reset_deck()
         {
             var deck = new Deck();
-            deck.TakeOnHand();
+            deck.TakeOneHand();
             deck.Reset();
             deck.NumberOfCards.Should().Be(52);
         }
@@ -30,7 +27,7 @@ namespace Forefront.CardGame.Tests
         public void Cards_should_be_removed_from_deck_after_a_hand_is_taken()
         {
             var deck = new Deck();
-            deck.TakeOnHand();
+            deck.TakeOneHand();
             deck.NumberOfCards.Should().Be(47);
         }
 
@@ -38,7 +35,7 @@ namespace Forefront.CardGame.Tests
         public void A_hand_from_deck_should_contains_5_cards()
         {
             var deck = new Deck();
-            var hand = deck.TakeOnHand();
+            var hand = deck.TakeOneHand();
             hand.ShowCard().Should().HaveCount(5);
         }
     }

@@ -1,5 +1,4 @@
-﻿using System.Collections.Generic;
-using FluentAssertions;
+﻿using FluentAssertions;
 using Forefront.CardGame.Game;
 using NUnit.Framework;
 
@@ -13,7 +12,7 @@ namespace Forefront.CardGame.Tests
         {
             var hand = new Hand();
             hand.TakeCard(new Card(Suit.Heart, CardName.Ace, 14));
-            List<Card> cards = hand.ShowCard();
+            var cards = hand.ShowCard();
             cards.Should().HaveCount(1);
         }
 
@@ -23,7 +22,7 @@ namespace Forefront.CardGame.Tests
             var card = new Card(Suit.Heart, CardName.Ace, 14);
             var hand = new Hand();
             hand.TakeCard(card);
-            List<Card> cards = hand.ShowCard();
+            var cards = hand.ShowCard();
             cards[0].ShouldBeEquivalentTo(card);
         }
     }

@@ -34,7 +34,6 @@ namespace Forefront.CardGame.Game
                     counter++;
                 }
             }
-            
         }
 
         public void Shuffle()
@@ -54,7 +53,7 @@ namespace Forefront.CardGame.Game
             }
         }
             
-        public Hand TakeOnHand()
+        public Hand TakeOneHand()
         {
             var hand = new Hand();
             for (var i = 0; i < 5; i++)
@@ -62,7 +61,5 @@ namespace Forefront.CardGame.Game
 
             return hand;
         }
-
-
     }
 }
