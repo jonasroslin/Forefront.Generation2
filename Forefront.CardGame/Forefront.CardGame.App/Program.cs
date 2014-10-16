@@ -73,15 +73,24 @@ namespace Forefront.CardGame.App
         {
             BigInteger counter = 0;
             Hand currentHand;
+
+            deck.Reset();
+            deck.Shuffle();
+
             do
             {
                 counter++;
-                deck.Reset();
-                deck.Shuffle();
+                if (deck.NumberOfCards < 5)
+                {
+                    deck.Reset();
+                    Shuffle(deck);
+                }
+                
                 currentHand = deck.TakeOneHand();
+                Console.WriteLine(deck.NumberOfCards);
                 if (counter%1000 == 0)
                     Console.WriteLine(counter);
-            } while (CheckIfIsTargetHand(currentHand));
+            } while (!CheckIfIsTargetHand(currentHand));
 
             Console.WriteLine("I needed {0} times", counter);
             cardPrinter.Print(currentHand.ShowCard());
@@ -112,7 +121,7 @@ namespace Forefront.CardGame.App
 
         private static bool CheckIfIsTargetHand(Hand currentHand)
         {
-            return currentHand.ShowCard().Count(x => x.Suit == Suit.Heart && x.Value >= 10) != 5;
+            return currentHand.ShowCard().GroupBy(x => x.Value).Select(grouping => grouping.Count() == 4).FirstOrDefault();
         }
     }
 }
